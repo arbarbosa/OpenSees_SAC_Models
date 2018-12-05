@@ -8,7 +8,7 @@ Files included:
 * Developed Fragility Functions (Supplementary Material)
 * Tsunami Fragility and Sensitivity Analysis Methods Developed
 
-The following link includes four branches to four building models (https://github.com/arbarbosa/OpenSees_SAC_Models/branches)
+As part of the data provided, in this project, the following link includes four branches to four finite element models of the building structures reported in the submitted manuscript (https://github.com/arbarbosa/OpenSees_SAC_Models/branches)
 * SEA3-M2A-Model
 * LA9-M2A-Model
 * LA3-M2A-Model
