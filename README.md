@@ -6,4 +6,4 @@ These data are made available to reviewers and if the paper is to be accepted we
 Files included:
 * OpenSees SAC Models Description
 * Developed Fragility Functions (Supplementary Material)
-* 
+* Tsunami Fragility and Sensitivity Analysis Methods Developed
