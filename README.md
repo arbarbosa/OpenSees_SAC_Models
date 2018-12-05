@@ -7,3 +7,5 @@ Files included:
 * OpenSees SAC Models Description
 * Developed Fragility Functions (Supplementary Material)
 * Tsunami Fragility and Sensitivity Analysis Methods Developed
+
+The following link includes four branches to four building models (https://github.com/arbarbosa/OpenSees_SAC_Models/branches)
