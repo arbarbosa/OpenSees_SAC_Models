@@ -9,3 +9,10 @@ Files included:
 * Tsunami Fragility and Sensitivity Analysis Methods Developed
 
 The following link includes four branches to four building models (https://github.com/arbarbosa/OpenSees_SAC_Models/branches)
+* SEA3-M2A-Model
+* LA9-M2A-Model
+* LA3-M2A-Model
+* LA3-M1-Model
+
+These models should be cited as: 
+* Ribeiro FLA, Barbosa AR, Kameshwar S. (2018) SAC Steel Building Models Developed in OpenSees. URL:https://github.com/arbarbosa/OpenSees_SAC_Models/branches
