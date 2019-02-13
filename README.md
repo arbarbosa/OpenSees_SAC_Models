@@ -7,6 +7,7 @@ Files included:
 * OpenSees SAC Models Description
 * Developed Fragility Functions (Supplementary Material)
 * Tsunami Fragility and Sensitivity Analysis Methods Developed
+* Fracture Connection Model Validation
 
 As part of the data provided, in this project, the following link includes four branches to four finite element models of the building structures reported in the submitted manuscript (https://github.com/arbarbosa/OpenSees_SAC_Models/branches)
 * SEA3-M2A-Model
