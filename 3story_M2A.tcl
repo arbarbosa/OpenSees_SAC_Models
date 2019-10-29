@@ -9,8 +9,6 @@
 
 ## source external files
 	source LibUnits.tcl;			# define system units
-	#source DisplayModel2D.tcl;			# procedure for displaying a 2D perspective of model
-	#source DisplayPlane.tcl;			# procedure for displaying a plane in the model
 	source Wsection.tcl;		# procedure for defining bilinear plastic hinge section
 	source rotPanelZone2D.tcl;   # procedure for defining Panel Zone springs
 	source elemPanelZone2D.tcl;			# procedure for defining 8 elements to create a rectangular panel zone
@@ -18,7 +16,7 @@
 ## INPUTs
 set Qake "GM.AT2";
 set Qake_factor "$g*1.";
-set npts_accelerogram 2995;   
+set npts_accelerogram 2500;   
 set dt_accelerogram 0.01;	
 
 ## OUTPUTs
@@ -503,7 +501,7 @@ element	elasticBeamColumn 	60093	9312	10311	0.024402532	$Es	0.001219683	$TransfT
 
 # define shear connections - reduced strength according to Gupta and Krawinkler (1999)
 
-#definir secções
+#definir secÃ§Ãµes
 set SC21x44 24;
 set My [expr 0.00156*$Fy_beam];
 uniaxialMaterial ElasticPP $SC21x44 [expr 0.2*$My/0.01] 0.01 -0.005 ;
@@ -1179,7 +1177,7 @@ puts "problem solved; time: [getTime]";
 };			# end if ok !0
 
 	if { $ok < 0 } {
-	puts "Análise Dinâmica imcompleta - Colapso durante o sismo principal (mainshock)";
+	puts "AnÃ¡lise DinÃ¢mica imcompleta - Colapso durante o sismo principal (mainshock)";
 	set Niter [expr $NumSteps+1];
 	set time_ajust 1E5;
 	}
