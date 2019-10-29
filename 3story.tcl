@@ -16,7 +16,7 @@
 ## INPUTs
 set Qake "GM.AT2";
 set Qake_factor "$g*1.";
-set npts_accelerogram 2995;   
+set npts_accelerogram 3000;   
 set dt_accelerogram 0.01;	
 
 ## OUTPUTs
@@ -630,7 +630,7 @@ puts "Model Built"
 	#close $Periods_before;
 
 	
-set analisys_type 1; # pushover = 1; dynamic = 2
+set analisys_type 2; # pushover = 1; dynamic = 2
 
 ####################################################################################################################################################################
 ## Pushover Analysis
@@ -864,7 +864,7 @@ puts "problem solved; time: [getTime]";
 };			# end if ok !0
 
 	if { $ok < 0 } {
-	puts "Análise Dinâmica imcompleta - Colapso durante o sismo principal (mainshock)";
+	puts "AnÃ¡lise DinÃ¢mica imcompleta - Colapso durante o sismo principal (mainshock)";
 	set Niter [expr $NumSteps+1];
 	set time_ajust 1E5;
 	}
