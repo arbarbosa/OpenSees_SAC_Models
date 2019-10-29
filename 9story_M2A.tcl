@@ -11,7 +11,6 @@
 	source DisplayPlane.tcl;			# procedure for displaying a plane in the model
 	source Wsection.tcl;		# procedure for defining bilinear plastic hinge section
 	source rotPanelZone2D.tcl;   # procedure for defining Panel Zone springs
-	source rotPanelZone2D_2.tcl;   # procedure for defining Panel Zone springs
 	source elemPanelZone2D.tcl;			# procedure for defining 8 elements to create a rectangular panel zone
 
 # INPUTs
@@ -1504,7 +1503,7 @@ puts "problem solved; time: [getTime]";
 };			# end if ok !0
 
 	if { $ok < 0 } {
-	puts "Análise Dinâmica imcompleta - Colapso durante o sismo principal (mainshock)";
+	puts "AnÃ¡lise DinÃ¢mica imcompleta - Colapso durante o sismo principal (mainshock)";
 	set Niter [expr $NumSteps+1];
 	set time_ajust 1E5;
 	}
@@ -1647,34 +1646,34 @@ puts "problem solved; time: [getTime]";
 
 	#if { [expr abs($disp_61)] > [expr 0.05*($LCol2+$LCol3*8)] } {
 	#set rotura 1;
-	#puts "Análise Dinâmica imcompleta - Colapso durante o sismo principal (mainshock) (disp61)";
+	#puts "AnÃ¡lise DinÃ¢mica imcompleta - Colapso durante o sismo principal (mainshock) (disp61)";
 	#} elseif { [expr abs($drift1)] > [expr 0.06*$LCol2] } {
 	#set rotura 1;
-	#puts "Análise Dinâmica imcompleta - Colapso durante o sismo principal (mainshock) (drift1)";
+	#puts "AnÃ¡lise DinÃ¢mica imcompleta - Colapso durante o sismo principal (mainshock) (drift1)";
 	#} elseif { [expr abs($drift2)] > [expr 0.06*$LCol3] } {
 	#set rotura 1;
-	#puts "Análise Dinâmica imcompleta - Colapso durante o sismo principal (mainshock) (drift2)";
+	#puts "AnÃ¡lise DinÃ¢mica imcompleta - Colapso durante o sismo principal (mainshock) (drift2)";
 	#} elseif { [expr abs($drift3)] > [expr 0.06*$LCol3] } {
 	#set rotura 1;
-	#puts "Análise Dinâmica imcompleta - Colapso durante o sismo principal (mainshock) (drift3)";
+	#puts "AnÃ¡lise DinÃ¢mica imcompleta - Colapso durante o sismo principal (mainshock) (drift3)";
 	#} elseif { [expr abs($drift4)] > [expr 0.06*$LCol3] } {
 	#set rotura 1;
-	#puts "Análise Dinâmica imcompleta - Colapso durante o sismo principal (mainshock) (drift4)";
+	#puts "AnÃ¡lise DinÃ¢mica imcompleta - Colapso durante o sismo principal (mainshock) (drift4)";
 	#} elseif { [expr abs($drift5)] > [expr 0.06*$LCol3] } {
 	#set rotura 1;
-	#puts "Análise Dinâmica imcompleta - Colapso durante o sismo principal (mainshock) (drift5)";
+	#puts "AnÃ¡lise DinÃ¢mica imcompleta - Colapso durante o sismo principal (mainshock) (drift5)";
 	#} elseif { [expr abs($drift6)] > [expr 0.06*$LCol3] } {
 	#set rotura 1;
-	#puts "Análise Dinâmica imcompleta - Colapso durante o sismo principal (mainshock) (drift6)";
+	#puts "AnÃ¡lise DinÃ¢mica imcompleta - Colapso durante o sismo principal (mainshock) (drift6)";
 	#} elseif { [expr abs($drift7)] > [expr 0.06*$LCol3] } {
 	#set rotura 1;
-	#puts "Análise Dinâmica imcompleta - Colapso durante o sismo principal (mainshock) (drift7)";
+	#puts "AnÃ¡lise DinÃ¢mica imcompleta - Colapso durante o sismo principal (mainshock) (drift7)";
 	#} elseif { [expr abs($drift8)] > [expr 0.06*$LCol3] } {
 	#set rotura 1;
-	#puts "Análise Dinâmica imcompleta - Colapso durante o sismo principal (mainshock) (drift8)";
+	#puts "AnÃ¡lise DinÃ¢mica imcompleta - Colapso durante o sismo principal (mainshock) (drift8)";
 	#} elseif { [expr abs($drift9)] > [expr 0.06*$LCol3] } {
 	#set rotura 1;
-	#puts "Análise Dinâmica imcompleta - Colapso durante o sismo principal (mainshock) (drift9)";
+	#puts "AnÃ¡lise DinÃ¢mica imcompleta - Colapso durante o sismo principal (mainshock) (drift9)";
 	#}
 	#
 	#if { [expr abs($disp_61)] > [expr 0.15*($LCol2+$LCol3*8)] || [expr abs($drift1)] > [expr 0.15*$LCol2] || [expr abs($drift2)] > [expr 0.15*$LCol3] || [expr abs($drift3)] > [expr 0.15*$LCol3] } {
